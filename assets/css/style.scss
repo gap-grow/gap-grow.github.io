@@ -1,0 +1,66 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+	min-height: 50px;
+        padding: 25px 20px 20px 20px;
+}
+
+/**
+ * details & summary
+ * scateu: 2016-12-01
+ */
+details {
+  border-radius: 3px;
+  background: #EEE;
+  margin: 1em 0;
+  padding-top: 15px;  // added Aug 7, 2024
+  padding-left: 15px;  // added Aug 7, 2024
+  padding-right: 15px; // added Aug 7, 2024
+}
+
+summary {
+  border: 1px solid #e8e8e8;
+  background: #F5F5F5;
+  color: #111;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+  margin-top: -15px; // added Aug 7, 2024
+  margin-left: -15px; // added Aug 7, 2024
+  margin-right: -15px; // added Aug 7, 2024
+}
+
+/* Style the summary when details box is open */
+details[open] summary {
+  background: #333;
+  color: #FFF;
+  margin-bottom: 10px; // added Aug 7, 2024
+}
+
+details[open] {
+  padding-bottom: 15px; // added Aug 7, 2024
+}
+
+summary:hover {
+  background: #333;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* Thu Nov 28 11:20:05 CST 2024 */
+/* inside details, ol list bottom margin should be zero */
+li > ol {
+    margin: 0 0 0px;
+}
+
+/* inside details, left padding should be small */
+menu, ol, ul {
+    padding: 0 0 0 10px;
+}
+
+details > ul {
+	list-style-image: unset;
+}
